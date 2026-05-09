@@ -23,6 +23,7 @@ When acting as an agent in this repo, refer to your specific role in `.claude/ag
 - **Security:** Run security scans on new dependencies.
 
 ## Key Workflows
+- **Task Organization:** Every new task or feature must be created in its own subfolder within the `tasks/` directory (e.g., `tasks/task-name/`).
 - **Linting:** Run `bash skills/lint.sh` before committing.
 - **Testing:** Run `bash skills/test.sh` to verify changes.
 - **Local Run:** `uvicorn src.main:app --reload`

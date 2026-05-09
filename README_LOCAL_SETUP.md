@@ -72,7 +72,15 @@ Agent roles are defined in `.claude/agents/`. You can use the provided PowerShel
 - `.\skills\test.ps1`
 - `.\skills\build.ps1`
 
-## 6. Directory Structure
+## 6. Troubleshooting
+
+### ConnectionRefused Error
+If Claude Code shows `Unable to connect to API (ConnectionRefused)`:
+1. **Check LiteLLM**: Ensure the LiteLLM proxy is running in a separate terminal window.
+2. **Check Port**: Verify that LiteLLM is listening on `http://localhost:4000` (default).
+3. **Run Command**: Make sure you ran `litellm --config .\litellm_config.yaml`.
+
+## 7. Directory Structure
 
 All files and configurations are strictly stored within this repository directory:
 - `.claude/agents/`: Agent role definitions.
