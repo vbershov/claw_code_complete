@@ -53,15 +53,17 @@ curl -fsSL https://claude.ai/install.sh | bash
    litellm --config .\litellm_config.yaml
    ```
 
-3. Run Claude Code with a specific model:
+3. Run Claude Code (using automation script):
    ```powershell
-   # To use Qwen (Code optimized)
+   .\start-claude.ps1
+   ```
+
+   *Or manually:*
+   ```powershell
    $env:ANTHROPIC_BASE_URL="http://localhost:4000"
    $env:ANTHROPIC_API_KEY="sk-any-key"
-   claude --model qwen-coder
-
-   # To use Llama (Reasoning/General)
-   claude --model llama-general
+   # qwen-coder is aliased as sonnet for compatibility
+   claude --model claude-3-5-sonnet-20241022
    ```
 
 ## 5. Agent Orchestration
