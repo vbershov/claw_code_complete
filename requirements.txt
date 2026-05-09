@@ -1,0 +1,12 @@
+fastapi>=0.100.0
+uvicorn>=0.22.0
+pydantic>=2.0.0
+python-multipart
+# Testing & Linting
+pytest>=7.0.0
+httpx>=0.23.0
+flake8>=6.0.0
+# Agent Orchestration dependencies
+langchain
+pydantic-settings
+litellm

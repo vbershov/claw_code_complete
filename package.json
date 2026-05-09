@@ -1,0 +1,14 @@
+{
+  "name": "agent-orchestration-base",
+  "version": "1.0.0",
+  "description": "Base infrastructure for AI Agent Orchestration",
+  "main": "index.js",
+  "scripts": {
+    "lint": "bash skills/lint.sh",
+    "test": "bash skills/test.sh",
+    "build": "bash skills/build.sh"
+  },
+  "dependencies": {
+    "ruflo": "latest"
+  }
+}
