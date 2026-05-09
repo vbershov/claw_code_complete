@@ -29,9 +29,11 @@ if (!(Get-Command ollama -ErrorAction SilentlyContinue)) {
 Write-Host "`n--- Setup Complete! ---" -ForegroundColor Cyan
 Write-Host "Everything has been configured in the current directory: $(Get-Location)"
 Write-Host "`nTo start developing:"
-Write-Host "1. Run LiteLLM Proxy (in a separate terminal):"
+Write-Host "1. Start LiteLLM Proxy (Recommended):"
 Write-Host "   litellm --model ollama/qwen2.5-coder:7b"
-Write-Host "2. Set Environment Variables and Start Claude Code:"
+Write-Host "2. Connect Claude Code to Proxy (in a new window):"
 Write-Host '   $env:ANTHROPIC_BASE_URL="http://localhost:4000"; $env:ANTHROPIC_API_KEY="sk-any-key"; claude'
-Write-Host "`n3. To run tests:"
+Write-Host "`nAlternatively, use direct Ollama connection:"
+Write-Host '   $env:ANTHROPIC_BASE_URL="http://localhost:11434/v1"; $env:ANTHROPIC_API_KEY="ollama"; claude --model qwen2.5-coder:7b'
+Write-Host "`nTo run tests:"
 Write-Host "   .\skills\test.ps1"
