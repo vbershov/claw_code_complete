@@ -42,7 +42,12 @@ curl -fsSL https://claude.ai/install.sh | bash
 
 ### Using LiteLLM Proxy (Recommended)
 
-1. Start the LiteLLM proxy (separate terminal):
+1. Install LiteLLM with proxy support:
+   ```powershell
+   pip install 'litellm[proxy]'
+   ```
+
+2. Start the LiteLLM proxy (separate terminal):
    ```powershell
    litellm --model ollama/qwen2.5-coder:7b
    ```

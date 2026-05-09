@@ -9,4 +9,4 @@ flake8>=6.0.0
 # Agent Orchestration dependencies
 langchain
 pydantic-settings
-litellm
+litellm[proxy]
