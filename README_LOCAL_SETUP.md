@@ -47,16 +47,21 @@ curl -fsSL https://claude.ai/install.sh | bash
    pip install 'litellm[proxy]'
    ```
 
-2. Start the LiteLLM proxy (separate terminal):
+2. Start the LiteLLM proxy with multiple models:
    ```powershell
-   litellm --model ollama/qwen2.5-coder:7b
+   # Uses litellm_config.yaml to serve Qwen and Llama
+   litellm --config .\litellm_config.yaml
    ```
 
-2. Run Claude Code:
+3. Run Claude Code with a specific model:
    ```powershell
+   # To use Qwen (Code optimized)
    $env:ANTHROPIC_BASE_URL="http://localhost:4000"
    $env:ANTHROPIC_API_KEY="sk-any-key"
-   claude
+   claude --model qwen-coder
+
+   # To use Llama (Reasoning/General)
+   claude --model llama-general
    ```
 
 ## 5. Agent Orchestration

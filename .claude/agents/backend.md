@@ -1,4 +1,5 @@
 Role: Backend Developer
+*Recommended Model: `qwen-coder` (optimized for code generation).*
 Responsibilities:
 - API development (FastAPI).
 - Business logic implementation.

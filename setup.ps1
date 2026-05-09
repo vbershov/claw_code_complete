@@ -23,6 +23,8 @@ if (!(Get-Command ollama -ErrorAction SilentlyContinue)) {
 } else {
     Write-Host "Pulling qwen2.5-coder:7b..." -ForegroundColor Green
     ollama pull qwen2.5-coder:7b
+    Write-Host "Pulling llama3:8b..." -ForegroundColor Green
+    ollama pull llama3:8b
 }
 
 # 4. Final Instructions
