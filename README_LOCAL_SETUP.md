@@ -28,7 +28,7 @@ Download the Windows installer from [ollama.com](https://ollama.com/) and run it
 
 If you didn't use the setup script, run:
 ```powershell
-ollama pull qwen2.5-coder:14b
+ollama pull qwen3:14b
 ```
 
 ## 3. Install Claude Code CLI
@@ -57,7 +57,7 @@ curl -fsSL https://claude.ai/install.sh | bash
    .\start-claude.ps1
    ```
 
-   *Note: Qwen2.5-Coder 14B is aliased as `claude-3-5-sonnet-20241022` for compatibility.*
+   *Note: Qwen3 14B is aliased as `claude-3-5-sonnet-20241022` for compatibility.*
 
 ## 5. Agent Orchestration
 

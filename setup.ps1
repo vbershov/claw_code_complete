@@ -21,8 +21,8 @@ Write-Host "Checking Ollama..." -ForegroundColor Green
 if (!(Get-Command ollama -ErrorAction SilentlyContinue)) {
     Write-Host "Warning: Ollama not found. Please install it from https://ollama.com" -ForegroundColor Yellow
 } else {
-    Write-Host "Pulling qwen2.5-coder:14b..." -ForegroundColor Green
-    ollama pull qwen2.5-coder:14b
+    Write-Host "Pulling qwen3:14b..." -ForegroundColor Green
+    ollama pull qwen3:14b
 }
 
 # 4. Final Instructions

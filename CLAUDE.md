@@ -5,7 +5,7 @@ This repository is a base for a complex Agent Orchestration system using Claude 
 
 ## Technical Stack
 - **Backend:** Python 3.10+, FastAPI
-- **LLM:** Ollama (qwen2.5-coder:14b)
+- **LLM:** Ollama (qwen3:14b)
 - **Orchestration:** Ruflo-style agent definitions
 - **CLI:** Claude Code
 

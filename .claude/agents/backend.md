@@ -1,5 +1,5 @@
 Role: Backend Developer
-*Recommended Model: `qwen2.5-coder:14b`.*
+*Recommended Model: `qwen3:14b`.*
 Responsibilities:
 - API development (FastAPI).
 - Business logic implementation.
