@@ -18,6 +18,22 @@ bash setup.sh
 
 ---
 
+## 🧹 Cleaning Up Old Environments
+
+If you previously set up the environment with older models (7B, 2.5-Coder), it is recommended to remove them to free up disk space and avoid conflicts:
+
+### Windows (PowerShell):
+```powershell
+.\scripts\cleanup_old_models.ps1
+```
+
+### Linux/macOS (Bash):
+```bash
+bash scripts/cleanup_old_models.sh
+```
+
+---
+
 ## Detailed Setup Instructions
 
 ## 1. Install Ollama for Windows
