@@ -28,7 +28,7 @@ Download the Windows installer from [ollama.com](https://ollama.com/) and run it
 
 If you didn't use the setup script, run:
 ```powershell
-ollama pull qwen2.5-coder:7b
+ollama pull qwen2.5-coder:14b
 ```
 
 ## 3. Install Claude Code CLI
@@ -47,9 +47,8 @@ curl -fsSL https://claude.ai/install.sh | bash
    pip install 'litellm[proxy]'
    ```
 
-2. Start the LiteLLM proxy with multiple models:
+2. Start the LiteLLM proxy:
    ```powershell
-   # Uses litellm_config.yaml to serve Qwen and Llama
    litellm --config .\litellm_config.yaml
    ```
 
@@ -58,13 +57,7 @@ curl -fsSL https://claude.ai/install.sh | bash
    .\start-claude.ps1
    ```
 
-   *Or manually:*
-   ```powershell
-   $env:ANTHROPIC_BASE_URL="http://localhost:4000"
-   $env:ANTHROPIC_API_KEY="sk-any-key"
-   # qwen-coder is aliased as sonnet for compatibility
-   claude --model claude-3-5-sonnet-20241022
-   ```
+   *Note: Qwen2.5-Coder 14B is aliased as `claude-3-5-sonnet-20241022` for compatibility.*
 
 ## 5. Agent Orchestration
 

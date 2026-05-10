@@ -10,8 +10,8 @@ if ! command -v ollama &> /dev/null
 then
     echo "Warning: Ollama not found. Please install it from https://ollama.com"
 else
-    echo "Pulling qwen2.5-coder:7b..."
-    ollama pull qwen2.5-coder:7b
+    echo "Pulling qwen2.5-coder:14b..."
+    ollama pull qwen2.5-coder:14b
 fi
 
 echo "--- Setup Complete! ---"
